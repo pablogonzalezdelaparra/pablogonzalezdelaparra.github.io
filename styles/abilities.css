@@ -1,0 +1,77 @@
+/* ABILITIES */
+.abilities {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--sct-spacing);
+    margin-bottom: var(--sct-spacing);
+}
+
+.abilities h3 {
+    grid-area: auto;
+    font-size: var(--fs-h3);
+}
+
+.abilities h2 {
+    grid-area: auto;
+    font-size: var(--fs-h2);
+}
+
+.abilities p {
+    grid-area: auto;
+}
+
+.abilities li {
+    font-size: var(--fs-p);
+    line-height: var(--lnh-p);
+}
+
+.abilities button {
+    margin-right: auto;
+}
+
+.abilities .ability-cards {
+    grid-area: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.ability-card {
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.25em 1em rgb(0 0 0 / 10%);
+    display: flex;
+    flex-direction: column;
+}
+
+.ability-card h4 {
+    font-size: var(--fs-h4);
+    font-weight: var(--fs-all-weight);
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.ability-card p {
+    font-size: 1rem;
+
+}
+
+.ability-card button {
+    /* General properties */
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .abilities {
+        max-width: 90%;
+    }
+
+    .abilities .ability-cards {
+        grid-template-columns: 1fr;
+    }
+
+}

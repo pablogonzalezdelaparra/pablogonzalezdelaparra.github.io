@@ -1,0 +1,91 @@
+/* CONTACT */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--sct-spacing);
+    margin-bottom: var(--sct-spacing);
+}
+
+.contact h3 {
+    grid-area: auto;
+    font-size: var(--fs-h3);
+}
+
+.contact h2 {
+    grid-area: auto;
+    font-size: var(--fs-h2);
+}
+
+.contact p {
+    grid-area: auto;
+}
+
+.contact .socials {
+    grid-area: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: var(--sct-spacing);
+}
+
+.contact form {
+    grid-area: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact .div-name-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.contact .div-name {
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .div-email {
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .div-textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact button {
+    /* General properties */
+    margin-left: auto;
+}
+
+.contact label {
+    font-size: var(--fs-label);
+    font-weight: var(--fs-all-weight);
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+}
+
+.contact input,
+textarea {
+    border: 2px solid black;
+    padding: 0.75em;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        max-width: 90%;
+    }
+
+    .contact .div-name-email {
+        flex-direction: column;
+    }
+}

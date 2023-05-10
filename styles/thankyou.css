@@ -1,0 +1,34 @@
+/* ABILITIES */
+.thankyou {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: var(--sct-spacing);
+    margin-bottom: var(--sct-spacing);
+}
+
+.thankyou h3 {
+    grid-area: auto;
+    font-size: var(--fs-h3);
+}
+
+.thankyou h2 {
+    grid-area: auto;
+    font-size: var(--fs-h2);
+}
+
+.thankyou p {
+    grid-area: auto;
+}
+
+.thankyou button {
+    margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .thankyou {
+        max-width: 90%;
+    }
+}
