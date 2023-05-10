@@ -1,1 +1,0 @@
-# pablogonzalezdelaparra.github.io

@@ -1,50 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <title>Pablo González de la Parra</title>
+    <meta name="description" content="Pablo González de la Parra. Ingeniero en Tecnologías Computacionales. Tecnológico de Monterrey. Portafolio.">
+    <link rel="apple-touch-icon" href="./media/logo-vector.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./media/logo-vector.png">
+    <title>Pablo González | Ingeniero de software</title>
 </head>
 
 <body>
-    <div class="header">
-        <h1>Pablo González de la Parra</h1>
-        <h2>Full Stack Developer. Solution Innovator. Tech enthusiast.</h2>
-    </div>
-    <div class="projects">
-        <h3>Projects</h3>
-        <div class="project">
-            <h4>Project 1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    <header>
+        <h1>Pablo González</h1>
+        <div class="terminal" id="terminal">
+            <h2 class="terminal-title" id="terminal-title"></h2>
+            <h2 class="terminal-underscore" id="terminal-underscore">&#95;</h2>
         </div>
-        <div class="project">
-            <h4>Project 2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <button class="main-button"><a href="#contact">CONTÁCTAME</a></button>
+    </header>
+    <nav class="navbar" id="navbar">
+        <div class="logo-active">
+            <a href="./" class="active">PG</a>
         </div>
-        <div class="project">
-            <h4>Project 3</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+            <i class="bi bi-list" id="responsive-icon"></i>
+        </a>
+        <div class="responsive-links">
+            <a href="./about.html">SOBRE MÍ</a>
+            <a href="./abilities.html">HABILIDADES</a>
+            <a href="./contact.html">CONTACTO</a>
         </div>
-        <div class="project">
-            <h4>Project 1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+    </nav>
+    <main>
+        <section class="about" id="about">
+            <h3>Sobre mí</h3>
+            <p><strong>Hola, mi nombre es Pablo.</strong> Soy estudiante del Tec de Monterrey que le encanta la
+                programación y cualquier cosa
+                relacionada con la tecnología y el desarrollo de software. Actualmente trabajo como freelancer brindando
+                soluciones tecnológicas
+                a empresas y personas, y siempre me encuentro interesado en obtener y trabajar en nuevas oportunidades.</p>
+            <button><a href="./about.html">LEER MÁS</a></button>
+        </section>
+        <section class="abilities" id="abilities">
+            <h3>Habilidades</h3>
+            <p>Tengo experiencia en el desarrollo de proyectos empresariales relacionados con el área de software, al
+                igual que
+                poseo competencias destacadas de cursos académicos y certificaciones externas. Me encuentro con la
+                disposición de brindar
+                <strong>productos de calidad, seguros y confiables</strong> por medio de distintas herramientas.
+            </p>
+            <div class="ability-cards">
+                <div class="ability-card">
+                    <h4>Desarrollo web</h4>
+                    <p>Genero sitios web <strong>atractivos, creativos y responsivos</strong> con el objetivo de
+                        convertir a los
+                        visitantes en clientes e incrementar la presencia digital.
+                    </p>
+                    <button><a href="./abilities.html#web-dev">LEER MÁS</a></button>
+                </div>
+                <div class="ability-card">
+                    <h4>Bases de datos</h4>
+                    <p>Desarrollo la estructura y mantenimiento de bases de datos con el fin de hacer más
+                        <strong>eficiente</strong> el
+                        uso y organización de información relevante.
+                    </p>
+                    <button><a href="./abilities.html#database">LEER MÁS</a></button>
+                </div>
+                <div class="ability-card">
+                    <h4>Estructuras de datos y algoritmos</h4>
+                    <p>Implemento lógica computacional moderna en sistemas existentes con el fin de <strong>optimizar y
+                            eficientar</strong> el uso de recursos y aumentar su rendimiento.</p>
+                    <button><a href="./abilities.html#dsa">LEER MÁS</a></button>
+                </div>
+                <div class="ability-card">
+                    <h4>Y mucho más</h4>
+                    <p>He tenido la oportunidad de desarrollar distintos proyectos basados en diferentes áreas de mi
+                        carrera profesional, ampliando mis <strong>conocimientos y habilidades</strong>.</p>
+                    <button><a href="./abilities.html#more">LEER MÁS</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h3>Contacto</h3>
+            <p>Me encanta poder ayudar a empresas y personas a lograr sus objetivos e incrementar su productividad,
+                desarrollando soluciones tecnológicas dirigidas a sus necesidades específicas. <strong>Escribeme
+                    un mensaje</strong> para platicar conmigo sobre como podemos desarrollar un proyecto que genere
+                valor.
+            </p>
+            <form action="https://formsubmit.co/f35574a343a5f147eefd4ce1f9dd43e2" method="POST">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://pablogdlp.com/thankyou.html">
+                <div class="div-name-email">
+                    <div class="div-name">
+                        <label class="name" for="name">Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="div-email">
+                        <label class="email" for="email">Correo</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="div-textarea">
+                    <label class="textarea" for="textarea">Mensaje</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" required></textarea>
+                </div>
+                <button class="button" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        <p>Encuéntrame en otra parte de la web:</p>
+        <div class="footer-links">
+            <a class="footer-link-1" href="https://www.linkedin.com/in/pablogdlp/" target="_blank">LinkedIn</a>
+            <a class="footer-link-2" href="https://github.com/pablogonzalezdelaparra" target="_blank">Github</a>
+            <a class="footer-link-3" href="https://www.facebook.com/pablogdlp/" target="_blank">Facebook</a>
         </div>
-        <div class="project">
-            <h4>Project 2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-        </div>
-        <div class="project">
-            <h4>Project 3</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
-        </div>
-    </div>
-    <script src="./scrollDownButton.js"></script>
+        <p>2022 Pablo González</p>
+    </footer>
+
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/terminal.js"></script>
 </body>
 
 </html>

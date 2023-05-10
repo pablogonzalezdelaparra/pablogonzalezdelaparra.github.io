@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pablo González de la Parra. Ingeniero en Tecnologías Computacionales. Tecnológico de Monterrey. Portafolio.">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="apple-touch-icon" href="./media/logo-vector.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="icon" type="image/x-icon" href="./media/logo-vector.png">
+    <title>Pablo González | Contacto</title>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo-active">
+            <a href="./" class="active">PG</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveNavbar()">
+            <i class="bi bi-list" id="responsive-icon"></i>
+        </a>
+        <div class="responsive-links">
+            <a href="./about.html">SOBRE MÍ</a>
+            <a href="./abilities.html">HABILIDADES</a>
+            <a href="#contact">CONTACTO</a>
+        </div>
+    </nav>
+    <main>
+        <section class="contact" id="contact">
+            <h2>Contacto</h2>
+            <form action="https://formsubmit.co/f35574a343a5f147eefd4ce1f9dd43e2" method="POST">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="https://pablogdlp.com/thankyou.html">
+                <div class="div-name-email">
+                    <div class="div-name">
+                        <label class="name" for="name">Nombre</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="div-email">
+                        <label class="email" for="email">Correo</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                </div>
+                <div class="div-textarea">
+                    <label class="textarea" for="textarea">Mensaje</label>
+                    <textarea name="textarea" id="textarea" cols="30" rows="10" required></textarea>
+                </div>
+                <button class="button" type="submit">Enviar</button>
+            </form>
+            <h3>Comunícate conmigo</h3>
+            <p>Si tienes alguna duda o comentario que sea urgente, comunícate conmigo de manera directa. O <strong>escribeme un mensaje</strong> en el formulario previo, y te responderé lo más pronto posible.</p>
+            <div class="socials">
+                <a href="mailto:contacto@pablogdlp.com"><i class="bi bi-envelope-fill"></i> Correo</a>
+            </div>
+        </section>
+    </main>
+    <aside>
+        Aside
+    </aside>
+    <footer>
+        <p>Encuéntrame en otra parte de la web:</p>
+        <div class="footer-links">
+            <a class="footer-link-1" href="https://www.linkedin.com/in/pablogdlp/" target="_blank">LinkedIn</a>
+            <a class="footer-link-2" href="https://github.com/pablogonzalezdelaparra" target="_blank">Github</a>
+            <a class="footer-link-3" href="https://www.facebook.com/pablogdlp/" target="_blank">Facebook</a>
+        </div>
+        <p>2022 Pablo González</p>
+    </footer>
+
+    <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/terminal.js"></script>
+</body>
+
+</html>
